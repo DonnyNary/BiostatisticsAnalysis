@@ -77,7 +77,7 @@ penguins %>% head()
 :::
 
 
-You can add options to executable code like this
+You can add options to executable code like this (a small change that will be reversed)
 
 
 ::: {.cell}
