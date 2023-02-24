@@ -217,7 +217,7 @@ penguins %>%
        x = "Species", y = "Count")
 ```
 
-The data above displays the count of s
+The data above displays the relationship between the three species of penguin (Adelie, Chinstrap, and Gentoo) and the count. The data shows that there is a large amount of the Gentoo population, and smaller amount of the Adelie population, and a minimal amount of the Chinstrap population.
 
 ```{r}
 penguins %>%
@@ -228,6 +228,8 @@ penguins %>%
   labs(title ="Distribution of Bill Lengths",
        x = "Bill Length (mm)", y = "Count")
 ```
+
+The graph displayed here shows the distribution of bill lengths, and how many penguins share similar bill length. This data includes the bill lengths of all three penguin species. The distribution type appears to be normal, with outliers on each end of the distribution. The focal point of this data set is the bill lengths within the 45mm to 50mm range. A majority of penguins seem to have mid length beaks, primaraly in the 45mm to 46mm range.
 
 ```{r}
 penguins %>%
@@ -240,6 +242,8 @@ penguins %>%
 
 ```
 
+In this graph, the bill depth is measured against the bill length. The data appears to show a slight correlation between shorter bill depths and longer bill lengths. Most of the plots lie in the bill ldepth range of 14mm to 16mm and a bill length of 45mm to 50mm. In the middle and left quadrants of the graph, bill lengths appear to be shorter on average while the bill depth is larger, aside from a handful of stand out outliers between the bill depth range of 16mm to 18mm.
+
 ```{r}
 penguins %>%
   ggplot() +
@@ -248,6 +252,8 @@ penguins %>%
        x = "Island",
        y = "Species")
 ```
+
+The data set above depicts the relationship between the species of penguin and the islands observed. The Gentoo only appear to populate the Biscoe island. The Gentoo penguins dominate the population on this island, however they do share is with a small portion of Adelie penguins. Dream island is populated primarily by Chinstrap penguins, and the Chinstrap penguins share this island with a very small proportion of Adelie penguins. Finally, Torgersen island is populated only by Adelie penguins. From the gathered data, we can make an observation that the Adelie penguins seem to move around, and take refuge on multiple different islands. The Gentoo penguins have the largest population, and are all located on one island.
 
 ```{r}
 penguins %>%
@@ -258,6 +264,8 @@ penguins %>%
        y = "")
 ```
 
+The bill depth in relation to species show us a good amount of information. Gentoo penguins have a mid sized distribution, with a low of roughly 14.5mm and a high of roughly 15.9mm. The Gentoo penguins have a lower overall bill depth compared to the other species. The Adelie penguins have a sizable distribution between roughly 17.2mm and 18.6mm. Adelie penguins share some similarities with the bill depth of chinstrap penguins, but not an awful lot. This small bit of information could tell us more about the similarities in environments. We know that Adelie and Chinstrap penguins share an island, and that Adelie penguins appear to populate every island observed. Finally, the Chinstrap penguins have the smallest distribution of bill depth. There appears to be a low bill depth of roughly 18.3mm, and a high bill depth of 19.2mm. Chinstrap penguins appear to have the highest overall bill depth by species.
+
 ```{r}
 penguins %>%
   ggplot() +
@@ -267,6 +275,8 @@ penguins %>%
        x = "Bill Depth (mm)",
        y = "")
 ```
+
+Once again, this graph is showing a depiction of bill length in relation to species. This graph gives a different view of the data, and help us support our previous conclusions, or make new ones. Starting with the Adelie penguins, we can see the specifics of the bill depth distribution. We can see more scattered values. The diverse values could be attributed too the Adelies population of all three observed islands. The chinstrap penguins have a much more refined distribution. There are only two specific plots around the 18mm mark and the 19.9mm mark. The data could appear like this due to the smaller population of observed Chinstrap penguins, or could be another factor such as the age or sex of the penguin. Finally we can observe the Gentoo penguins. Gentoo penguins have the largest distribution here. This could be due to the large population of the observed Gentoo penguins.
 
 ```{r}
 penguins %>%
@@ -286,3 +296,5 @@ penguins %>%
        y = "Flipper Length(mm)") +
   theme_light()
 ```
+
+This graph shows the relationship of flipper and bill length by the species and sex. This data set gives us alot of information regarding the species by gender, and the island the penguins reside on. The male and female flipper and bill length are very similar for the Adelie penguins on Biscoe island. The male and female Gentoo penguins have a similar distribution when addressing flipper and bill length, however there is a larger population of males, and most of them have a larger flipper length despite having a similar bill length. Even though both the Adelie and Gentoo penguins share an island, the bill and flipper lengths are very different. On Dream island, the Male and female penguins have very different results on flipper and bill length. The female penguins have a shorter bill length and flipper length, while the males have a much higher flipper and bill length. The Adelie penguins residing on Dream island have a similar flipper length to their Biscoe island counterparts, however their bill length is much longer. The female Adelie penguins on Torgersen island have an average or middle ground flipper length, unlike the Adelie penguins on Biscoe island, which have a lower flipper length. Both groups of Adelie penguins share a similar bill length. The male Adelie penguins on Torgersen island have a very different distribution to the male penguins on Biscoe island. The males on Torgersen island have a much larger flipper length, but the bill length are similar for both groups. Despite being spread among multiple islands, the Adelie penguins have a very different flipper lengths among all groups, but the bill depth is relatively similar. This could be the cause of different environments, and adaption.
